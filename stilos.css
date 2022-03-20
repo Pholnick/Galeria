@@ -1,0 +1,89 @@
+body {
+  background-color: #dce1df;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #dce1df;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.ins{
+  
+  text-align: left;
+  background-color: white;
+  margin-left: 0px;
+  margin-top: -19px;
+  margin-bottom: 33px;
+  width: 200px;
+  height: 71px;
+ 
+
+}
+
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div  {
+  
+  margin-right: 27px;
+  
+  flex-basis: 216px;
+}
+
+@media only screen and (max-width: 480px) {
+  .lightbox-gallery .ins {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox > div .ins{
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.lightbox .ins {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.lightbox img .ins{
+  display: block;
+  margin: auto;
+}
+
+.lightbox .caption .ins{
+  margin: 15px auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #eee;
+}
+
